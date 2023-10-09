@@ -1,0 +1,72 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+fieldset {
+    border: 2px solid #ff6600; /* Halloween orange border */
+    margin: 20px;
+    padding: 20px;
+    background-color: #222; /* Dark gray */
+}
+
+legend {
+    color: #ff6600; /* Halloween orange text color */
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    background-color: #444; /* Slightly darker gray */
+    color: #fff; /* White text color */
+    border: 2px solid #ff6600; /* Halloween orange border */
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff6600; /* Halloween orange */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 3px solid #ff6600; /* Halloween orange border */
+}
+
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid #ff6600; /* Halloween orange border */
+    background-color: #444; /* Slightly darker gray */
+}
+
+.maroon {
+    background-color: maroon;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.magenta {
+    background-color: magenta;
+}
