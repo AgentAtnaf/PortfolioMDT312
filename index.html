@@ -3,73 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-py6VYpJ4gqSWEDl+ZyDHw3PRG0NNil/bcQ5QxBr4nFLTYVf8eOaouDcwul9xPjw6gLxS0QHjeI4gX+j42mljwQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="Projectt/styles.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Projectt/Project.html">Projects</a></li>
+                <li><a href="https://www.instagram.com/fanta_rb/">GitHub</a></li>
+            </ul>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="Projectt/Project.html">Projects</a></li>
-            <li><a href="https://web.facebook.com/fanta.ch.9">Facebook</a></li>
-            <li><a href="https://www.instagram.com/fanta_rb/">Instagram</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="profile-pic">
-                <img src="Photo/Litterlyme.jpg" alt="My Profile Picture">
+        <div class="center-content">
+            <div class="name-container">
+                <p class="intro-text">HI I'm</p>
+                <h1 class="name-text">
+                    Ingkarat<span class="last-name"> Chanyourg</span>
+                </h1>
             </div>
-            <div id="blog-section">
-                <div class="blog-entry">
-                    <h3>Hobbies</h3>
-                    <p>PlayingGame: I really enjoy playing immersion game.</p>
-                    <p>Watching movies:It's very fun time to watch some movie with a snack along with it.</p>
-                    <p>Listening to music: While I work that is a somethings that can be missed.</p>
-                </div>
-                <div class="blog-entry">
-                    <h3>Skills and Abilities</h3>
-                    <p>I have some coding skills with it's not great much but it make me can read it like how is this code work.</p>
-                    <p>I can analized how the game work, how it's fun to play, why some player keep playing it.</p>
-                </div>
-                <div class="blog-entry">
-                    <h3>Interests</h3>
-                    <p>I'm highly interested to be game designer.</p>
-                </div>
-                <div class="blog-entry">
-                    <h3>My Photo</h3>
-                    <div class="photo-row">
-                        <div class="photo">
-                            <img src="Photo/Helping kid.jpg" alt="Photo 1" width="300">
-                            <p>Idia camp: Lab game.</p>
-                        </div>
-                        <div class="photo">
-                            <img src="Photo/SometimeIwonder.jpg" alt="Photo 2" width="300">
-                            <p>Idia camp: Lab game.</p>
-                        </div>
-                        <div class="photo">
-                            <img src="Photo/Helpingthelid.jpg" alt="Photo 3" width="300">
-                            <p>Idia camp: Lab game.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-entry">
-                    <h3>Links to Other Pages</h3>
-                    <ul>
-                        <li><a href="Cinamon Roll/recipe.html">Cinnamon Roll Wreath with Apples</a></li>
-                        <li><a href="Blog/Blog.html">Blog</a></li>
-                        <li><a href="Register/register.html">Register and login</a></li>
-                        <li><a href="Game/index.html">Square game</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+            <p>I want to be Game Designer</p>
+            <div class="arrow-down"></div> <!-- Arrow remains inside center-content -->
+        </div>
     </main>
+    <section class="about-me">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="Photo/Me.jpg" alt="Ingkarat Chanyourg" class="profile-pic">
+            <p>
+                Hello! I'm Ingkarat Chanyourg, aspiring to be a game designer. I'm passionate about creating immersive worlds and engaging gameplay experiences. With a background in software development and design, I'm continually learning and working on projects that push the boundaries of interactive entertainment.
+            </p>
+        </div>
+        <div class="icon-container">
+            <img src="Photo/C.png" alt="Icon 1" class="icon">
+            <img src="Photo/HTML.png" alt="Icon 2" class="icon">
+            <img src="Photo/JS.png" alt="Icon 3" class="icon">
+            <img src="Photo/Phyton.png" alt="Icon 4" class="icon">
+            <img src="Photo/UnityUI.png" alt="Icon 5" class="icon">
+        </div>
+    </section>
     <footer>
-        <p>This webpage is design with helping of ChatGPT.</p>
     </footer>
 </body>
 </html>

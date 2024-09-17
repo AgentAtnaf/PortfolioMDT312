@@ -1,131 +1,198 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    font-family: "Fira Code", sans-serif;
+    background-color: #000;
+    color: #fff;
 }
 
 header {
-    background-color: #ff6600; /* Halloween orange */
-    text-align: center;
+    background-color: #0f0f0f;
     padding: 20px 0;
 }
 
 nav ul {
     list-style-type: none;
-    background-color: #000;
-    text-align: center;
+    text-align: right;
     padding: 10px;
+    margin: 0;
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
     margin: 0 10px;
 }
 
 nav a {
     text-decoration: none;
-    color: #ff6600; /* Halloween orange */
+    color: #fff;
 }
 
+nav a i {
+    color: #0f0f0f;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+nav a:hover i {
+    color: #fff; /* Optional hover effect */
+}
+
+/* Main content styles */
 main {
-    padding: 20px;
-}
-
-.photo-row {
+    position: relative;
+    padding: 50px;
+    height: 80vh;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
 }
 
-.photo {
-    width: 30%; /* Each photo occupies up to 30% of the container width */
-    margin-bottom: 20px;
+.center-content {
     text-align: center;
 }
 
-.photo img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ff6600; /* Halloween orange border */
+h1 {
+    font-size: 4rem;
+    animation: light-grow 2s infinite;
 }
 
-#about {
-    background-color: #333; /* Dark gray */
-    padding: 20px;
-    margin: 20px 0;
-    text-align: center; /* Center text */
+.last-name {
+    font-family: 'Fira Code', cursive; 
+    font-size: 4rem;
 }
 
-.profile-pic img {
-    max-width: 100%; /* Make the profile picture responsive */
-    height: auto;
-    display: block; /* Center horizontally */
-    margin: 0 auto; /* Center horizontally */
-    border: 5px solid #ff6600; /* Halloween orange border */
+p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.center-content {
+    text-align: center;
 }
 
-#about p {
-    font-size: 18px;
-    margin: 10px 0;
-    line-height: 1.4;
+/* Container for name and intro text */
+.name-container {
+    position: relative;
+    display: inline-block; /* Ensures container wraps tightly around content */
 }
 
-#about h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+/* Intro text styling */
+.intro-text {
 
-#about p {
-    font-size: 18px;
-    margin: 10px 0;
-    line-height: 1.4;
-}
-
-#about h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-#blog-section {
+    top: -90px; /* Adjust vertical position as needed */
+    left: 0;    
+    font-size: 4.5rem; /* Larger text size */
     text-align: left;
+    margin: 0;
+    color: #fff; /* Ensures text is white */
 }
 
-.blog-entry {
-    background-color: #444; /* Slightly darker gray */
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #ff6600; /* Halloween orange border */
+/* Name text styling */
+.name-text {
+    font-size: 4rem;
+    animation: light-grow 2s infinite;
+}
+.arrow-down {
+    position: absolute; /* Positioned absolutely */
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    animation: bounce 2s infinite;
+}
+.about-me {
+    background-color: #1a1a1a; /* Slightly lighter background */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.blog-entry h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
+.about-me h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
 }
 
-.blog-entry p {
-    font-size: 16px;
-    line-height: 1.3;
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Media query for smaller screens */
+.profile-pic {
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-right: 40px;
+    border: 4px solid #fff; 
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 600px;
+}
+/* Icons Section */
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px; 
+}
+
+.icon-container .icon {
+    width: 75px; /* Initial size of the icons */
+    height: 75px;
+    margin: 0 50px;
+    transition: transform 0.3s;
+}
+
+.icon-container .icon:hover {
+    transform: scale(1.5); /* Enlarges the icon by 20% on hover */
+}
+
 @media (max-width: 768px) {
-    .photo {
-        width: 45%; /* Adjust the width of photos for smaller screens */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
     }
 
-    #about {
-        padding: 10px; /* Decrease padding for smaller screens */
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
-    .profile-pic img {
-        max-width: 80%; /* Adjust the profile picture width for smaller screens */
+    .about-content p {
+        text-align: center;
     }
+}
 
+
+/* Animation for text light grow effect */
+@keyframes light-grow {
+    0%, 100% {
+        color: #ffffff; /* A lighter color for glow */
+        text-shadow: 0 0 5px rgb(255, 255, 255);
+    }
+}
+
+/* Animation for arrow bounce */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0) rotate(45deg);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px) rotate(45deg);
+    }
 }
