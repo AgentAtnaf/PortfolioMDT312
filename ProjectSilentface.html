@@ -37,7 +37,7 @@
             <table>
                 <tr>
                     <th>Role</th>
-                    <td>Game Designer</td>
+                    <td>Game Designer and Team manager</td>
                 </tr>
                 <tr>
                     <th>Team Size</th>
@@ -54,13 +54,47 @@
             </table>
         </div>
     </div>
-        <!-- What I Do Section -->
         <div class="what-i-do-section">
             <h2>What I Do</h2>
             <p>
-                In this project, I was responsible for designing the game mechanics, creating level designs, and ensuring a cohesive player experience.
+                In this project, I was responsible for team management, storytelling, designing game mechanics, 
+                and creating level designs to ensure a cohesive player experience. I designed the monster AI behavior,
+                the level layout, and how the guns function in alignment with the story and character development. 
+                I provided detailed design briefs to the art team, enabling them to create characters as I envisioned.
+                Additionally, I designed how each item functions and interacts with the environment, 
+                determining where items should drop based on the game's pacing. 
+                I also orchestrated when enemies would appear to hunt the player. Furthermore, 
+                I crafted the game loop, ensuring smooth and continuous gameplay from start to finish.
             </p>
         </div>
+        <div class="image-gallery">
+            <div class="gallery-item">
+                <a href="#!" onclick="openModal('Photo/Level0.png')">
+                    <img src="Photo/Level0.png" alt="Image 1 Description">
+                </a>
+                <p class="image-description">Level Design Underground</p>
+            </div>
+            <div class="gallery-item">
+                <a href="#!" onclick="openModal('Photo/Level1.png')">
+                    <img src="Photo/Level1.png" alt="Image 2 Description">
+                </a>
+                <p class="image-description">Level Design First Floor</p>
+            </div>
+            <div class="gallery-item">
+                <a href="#!" onclick="openModal('Photo/Level2.png')">
+                    <img src="Photo/Level2.png" alt="Image 3 Description">
+                </a>
+                <p class="image-description">Level Design Second Floor</p>
+            </div>
+        </div> 
+        <div class="gameplay-video-section">
+            <h2>Gameplay Video</h2>
+            <video src="video/introgame.mp4" controls autoplay loop muted></video>
+        </div>       
+    <div id="image-modal" class="modal" onclick="closeModal()">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
