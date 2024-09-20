@@ -309,7 +309,7 @@ p {
 .project-content {
     display: flex;
     justify-content: center; /* Centers the content horizontally */
-    align-items: flex-start;
+    align-items: stretch;
     max-width: 1500px;
     width: 80%;
     margin: 10px auto 0 auto; /* Centers the container itself */
@@ -319,10 +319,12 @@ p {
     background-color: var(--secondary-background-color);
     color: var(--text-color);
     padding: 30px;
-    flex: 0 0 45%; /* Sets the width of each section to 45% */
-    margin: 0 8px; /* Adds horizontal space between sections */
+    flex: 0 0 45%; /* Each section takes up 45% of the container's width */
+    margin: 0 8px;
     border-radius: 7px;
-} 
+    display: flex;                /* Makes the section a flex container */
+    flex-direction: column;       /* Stacks content vertically */
+}
 
 .about-section {
     margin-right: 30px;
@@ -340,7 +342,7 @@ p {
 
 .about-section {
     font-size: 1rem;
-    line-height: 0.46;
+    line-height: 1;
     color: var(--secondary-text-color);
 }
 .project-description {
