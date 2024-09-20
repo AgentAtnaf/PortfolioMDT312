@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Green night</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="star-background.js"></script>
+</head>
+<body>
+    <div id="star-background"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Projectt/Project.html">Projects</a></li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+    <div class="project-detail">
+        <img src="Photo/concept_village0.png" alt="Project Silent Faced" class="project-image">
+    </div>
+    <div class="project-content">
+        <div class="about-section">
+            <h2>About</h2>
+            <p class="project-description">
+                A 2D tower defense survival game in which the player must manage resources and prepare for upcoming challenges. 
+                Players will need to make critical decisions, such as searching supplies, crafting and engaging in trade, to ensure their survival.
+            </p>
+        </div>
+        <!-- Project Info Section -->
+        <div class="info-section">
+            <h2>Project Info</h2>
+            <table>
+                <tr>
+                    <th>Role</th>
+                    <td>Game Designer and Team manager</td>
+                </tr>
+                <tr>
+                    <th>Team Size</th>
+                    <td>3 Members</td>
+                </tr>
+                <tr>
+                    <th>Engine</th>
+                    <td>Unity</td>
+                </tr>
+                <tr>
+                    <th>Development Time</th>
+                    <td>WIP</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        <!-- What I Do Section -->
+        <div class="what-i-do-section">
+            <h2>What I Do</h2>
+            <p>
+                I am a designer, team manager, and developer. I design mechanics, plant map layouts for expeditions, 
+                and create NPC class diagrams to simplify development for the team. I also define item stats such as rarity, trade value,
+                disassembly value, and quality. Additionally, I design how Dynamic Difficulty Adjustment (DDA) responds to player actions,
+                item interactions, progression, and skill usage. Lastly, I design the UI layout, detailing what elements should be included
+                and how they should interact with the player.
+            </p>
+        </div>
+    <div id="image-modal" class="modal" onclick="closeModal()">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+    <div class="what-i-do-section">
+        <h2>What I learned from this project</h2>
+        <p>
+            This project is still in progress, so I haven't learned much from it yet, but I did gain an important insight about time mechanics in games. 
+            Time mechanics need to be developed carefully, especially if they are integral to multiple aspects of the game. For example,
+             functions like fast-forward, time scaling, and timestamp checks need to work in sync with other systems. A timestamp function should return 
+             true when a specific time is reached, allowing other functions to proceed smoothly.
+        </p>
+    </div>
+    <div class="icon-link-section">
+        <h2>If you want to know more.</h2>
+        <div class="icon-link-container">
+            <a href="https://github.com/Kung16845/Green-Night" target="_blank" class="icon-link">
+                <img src="Photo/github.png" alt="Example 1">
+                <p>Github</p>
+            </a>
+            <a href="https://miro.com/welcomeonboard/UWtscUhvUjB3WDd5QmFxQmNRYXdRa3Excm1ZaHZZR2poaEJZcXlOV0h5bEw3Q3RhQVdjUWU1YVJTT3hGS2IzZ3wzNDU4NzY0NTI1NjEzOTE3OTk2fDI=?share_link_id=486408320412" target="_blank" class="icon-link">
+                <img src="Photo/miro.png" alt="Example 2">
+                <p>Miro Board</p>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
