@@ -11,3 +11,10 @@ window.closeModal = function () {
     var modal = document.getElementById('image-modal');
     modal.style.display = 'none';
 };
+function fadeOut(event) {
+    event.preventDefault();
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+        window.location.href = event.currentTarget.href;
+    }, 100);
+}

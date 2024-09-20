@@ -2,8 +2,12 @@
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
-
+.fade-out {
+    opacity: 0;
+}
 /* Color Variables */
 :root {
     --background-color: #000;
@@ -450,21 +454,22 @@ p {
 }
 /* Gameplay Video Section */
 .gameplay-video-section {
-    max-width: 1000px;
+    max-width: 1500px;
     width: 100%;
-    margin: 30px auto; /* Centers the section horizontally */
+    margin: 40px auto;
+    text-align: left;
     color: var(--text-color);
 }
 
 .gameplay-video-section h2 {
-    text-align: left;
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.gameplay-video-section video {
+.gameplay-video-section iframe {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
     border-radius: 8px;
 }
 
@@ -480,6 +485,69 @@ p {
     }
 }
 
+/* Icon Link Section */
+.icon-link-section {
+    max-width: 600px;
+    width: 100%;
+    margin: 30px 190px; /* Centers the section and adds vertical spacing */
+    text-align: center;
+    color: var(--text-color);
+}
+
+.icon-link-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.icon-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-decoration: none; /* Removes underline from links */
+    color: var(--text-color);
+    transition: transform 0.3s;
+}
+
+.icon-link img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the icon circular */
+    transition: transform 0.3s;
+}
+
+.icon-link p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.icon-link:hover img {
+    transform: scale(1.2); /* Enlarges the icon on hover */
+}
+
+.icon-link:hover {
+    transform: scale(1.05); /* Slightly enlarges the entire link on hover */
+}
+
+@media (max-width: 800px) {
+    .icon-link {
+        margin: 15px;
+    }
+
+    .icon-link img {
+        width: 80px;
+        height: 80px;
+    }
+}
 
 @media (max-width: 800px) {
     .gallery-item {
@@ -568,5 +636,10 @@ p {
     }
     50% {
         transform: translateX(-50%) translateY(10px) rotate(45deg);
+    }
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }

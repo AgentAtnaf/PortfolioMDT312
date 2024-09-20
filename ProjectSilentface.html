@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Project Silent Faced</title>
-    <link rel="stylesheet" href="Project/styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <script src="star-background.js"></script>
 </head>
 <body>
@@ -54,6 +54,7 @@
             </table>
         </div>
     </div>
+        <!-- What I Do Section -->
         <div class="what-i-do-section">
             <h2>What I Do</h2>
             <p>
@@ -89,11 +90,38 @@
         </div> 
         <div class="gameplay-video-section">
             <h2>Gameplay Video</h2>
-            <video src="video/introgame.mp4" controls autoplay loop muted></video>
+            <iframe src="https://drive.google.com/file/d/1HSBefIFF9-xWLzXM4Ih9OWDvA86zEA33/preview" allow="autoplay"></iframe>
         </div>       
     <div id="image-modal" class="modal" onclick="closeModal()">
         <span class="close-button" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modal-image">
+    </div>
+    <div class="what-i-do-section">
+        <h2>What I learned from this project</h2>
+        <p>
+            Testing from the build is more important than from the Editor, as performance issues like lag differ in the final build. 
+            Frequent builds are needed to identify and fix problems early, preventing delays later. Using multiplication instead of addition for adjusting character abilities avoids 
+            repeated value increases and simplifies management. A central variable should control all factors for easier handling. 
+            Large projects come with challenges, so having backup plans is crucial. For example, delays in scene completion hindered item placement,
+            causing a bottleneck in passing data to the coder and slowing the testing process.
+        </p>
+    </div>
+    <div class="icon-link-section">
+        <h2>If you want to know more.</h2>
+        <div class="icon-link-container">
+            <a href="https://github.com/Kung16845/GDM320" target="_blank" class="icon-link">
+                <img src="Photo/github.png" alt="Example 1">
+                <p>Github</p>
+            </a>
+            <a href="https://docs.google.com/document/d/1CFIq1maFN1MB_N3LDfelpzQkVkXNceH9C9wt4lGts9g/edit?usp=sharing" target="_blank" class="icon-link">
+                <img src="Photo/doc.png" alt="Example 2">
+                <p>GDD</p>
+            </a>
+            <a href="https://agentatnaf01.itch.io/silent-faced" target="_blank" class="icon-link">
+                <img src="Photo/Ithchio.png" alt="Example 3">
+                <p>Itch.io</p>
+            </a>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
