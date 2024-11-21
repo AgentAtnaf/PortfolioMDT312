@@ -210,7 +210,16 @@ p {
     opacity: 0.8;
     animation: floatStars linear infinite;
 }
+.what-i-do-section ul {
+    list-style-type: disc; /* Adds default bullet points */
+    margin-left: 20px; /* Indents the list for better readability */
+    line-height: 1.6; /* Improves spacing between list items */
+}
 
+.what-i-do-section ul li {
+    font-size: 1rem; /* Adjusts the font size */
+    color: var(--primary-text-color); /* Use your site's primary text color */
+}
 /* Keyframes for random floating */
 @keyframes floatStars {
     0% {
@@ -389,7 +398,6 @@ p {
 .what-i-do-section p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: var(--secondary-text-color); /* Slightly lighter text color */
 }
 /* Image Gallery Styles */
 .image-gallery {
